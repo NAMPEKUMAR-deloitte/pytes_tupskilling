@@ -9,6 +9,7 @@ class Testload:
     baseurl = 'https://practice.expandtesting.com/webpark'
 
     def test_calculateload(self):
+
         self.driver = webdriver.Chrome()
         self.driver.get(self.baseurl)
         self.driver.maximize_window()
@@ -17,7 +18,9 @@ class Testload:
         self.driver.find_element(By.XPATH, '//*[@id="exitTime"]').clear()
         self. driver.find_element(By.XPATH, '//*[@id="exitTime"]').send_keys('18:00')
         self.driver.find_element(By.XPATH, '//*[@id="calculateCost"]').click()
-        time.sleep(10)
+
+
+
 
 
 
